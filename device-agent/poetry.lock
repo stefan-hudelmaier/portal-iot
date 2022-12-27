@@ -1,0 +1,36 @@
+[[package]]
+name = "certifi"
+version = "2022.12.7"
+description = "Python package for providing Mozilla's CA Bundle."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
+name = "paho-mqtt"
+version = "1.6.1"
+description = "MQTT version 5.0/3.1.1 client class"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+proxy = ["pysocks"]
+
+[[package]]
+name = "tinkerforge"
+version = "2.1.30"
+description = "Python API Bindings for Tinkerforge Bricks and Bricklets"
+category = "main"
+optional = false
+python-versions = "*"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.8"
+content-hash = "3e6ea2a6dc8fa8db8d09564ba98256b71f9015af51c7015a2a2224fb645e2064"
+
+[metadata.files]
+certifi = []
+paho-mqtt = []
+tinkerforge = []
