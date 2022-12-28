@@ -1,8 +1,7 @@
 require 'mqtt'
 
 # Set the MQTT topics you're interested in and the tag (data-id) to send for dashing events
-MQTT_TOPICS = { 'data/raspi/cellar/humidity' => 'watts',
-                'home/sensors/currentcost/temperature' => 'cctemp',
+MQTT_TOPICS = { 'data/raspi/cellar/humidity' => 'humidity-cellar'
               }
 
 # Start a new thread for the MQTT client
