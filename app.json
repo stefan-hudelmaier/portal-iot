@@ -1,0 +1,39 @@
+{
+  "v": "4.0",
+  "name": "iot-dashboard",
+  "image": "ghcr.io/stefan-hudelmaier/portal-iot:main",
+  "entrypoints": [
+    {
+      "container_port": 3030, 
+      "entrypoint_port": "http"
+    }
+  ],
+  "data_dirs": [
+  ],
+  "services": [],
+  "env_vars": {
+    "MQTT_PASSWORD": "xxx"
+  },
+  "paths": {
+    "": {
+      "access": "private",
+      "headers": {
+        "X-Ptl-Client-Id": "{{ auth.client_id }}",
+        "X-Ptl-Client-Name": "{{ auth.client_name }}",
+        "X-Ptl-Client-Type": "{{ auth.client_type }}"
+      }
+    }
+  },
+  "lifecycle": {
+    "always_on": false,
+    "idle_time_for_shutdown": 60
+  },
+  "store_info": {
+    "description_short": "Dashboard for visualizing IoT data",
+    "description_long": [
+    ],
+    "hint": [
+    ],
+    "is_featured": true
+  }
+}

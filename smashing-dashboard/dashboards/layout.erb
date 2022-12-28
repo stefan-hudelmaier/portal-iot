@@ -14,19 +14,18 @@
 
   <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
   <link rel="icon" href="/favicon.ico">
+<style>
+
+h1 {
+  font-size: 20px;
+}
+
+</style>
 
 </head>
   <body>
     <div id="container">
       <%= yield %>
     </div>
-  
-    <% if development? %>
-      <div id="saving-instructions">
-        <p>Paste the following at the top of <i><%= params[:dashboard] %>.erb</i></p>
-        <textarea id="gridster-code"></textarea>
-      </div>
-      <a href="#saving-instructions" id="save-gridster">Save this layout</a>
-    <% end %>
   </body>
 </html>
